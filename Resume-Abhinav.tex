@@ -1,0 +1,273 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Abhinav Singh} \\ \vspace{1pt}
+    \small +91 7752874034 $|$ \href{mailto:x@x.com}{\color{blue}\textbf{abhinavsingh.iitbhu@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/}{\color{blue}\textbf{LinkedIn}} $|$
+    \href{https://github.com/abhinav-0107}{\color{blue}\textbf{GitHub}} $|$ 
+    \href{https://leetcode.com/abhinav_singh_01/}{\color{blue}\textbf{Leetcode}} $|$ 
+    \href{https://codeforces.com/profile/PRESAAN_}{\color{blue}\textbf{Codeforces}
+    }
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology (BHU), Varanasi}{July'19 -- May'23}
+      {Bachelor of Technology'23}{CGPA : 8.21}
+    \resumeSubheading
+      {India Institute of Technology, Madras}{Jan'22 -- Present}
+      {Diploma in Computer Programming}{}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Husk Power System}{June'23 -- present}
+      {Software Engineer}{}
+      \resumeItemListStart
+        \resumeItem{Revamped Huskify's codebase for a \textbf{10\%} build time reduction, which has \textbf{50,000+} Play Store downloads}
+        \resumeItem{Integrated a \textbf{Nginx Load balancer}, boosted traffic-handling capacity by \textbf{2 times} for the \textbf{Diwali sale}}
+        \resumeItem{Implemented \textbf{caching} mechanism for HTTP responses, resulting in improvement of data retrieval speed.}
+        \resumeItem{Utilized \textbf{GitHub Actions} to enable \textbf{continuous deployment(CI/CD)} to \textbf{AWS EC2} instances.}
+        \resumeItem{Integrated \textbf{Zod} for input validation in both backend and frontend, resulting in a decrease in incorrect inputs.}
+        \resumeItem{Integrated \textbf{shimmer effect} in Huskify, boosting user retention by \textbf{18\%} with reduced perceived loading time.}
+        \resumeItem{Executed, single-handedly the \textbf{figma} design of the new product detail screen, by uisng \textbf{TailwindCSS} and \textbf{recoil}.}
+        \resumeItem{Formulated \textbf{test cases} for APIs in \textbf{Postman}, pacing software development and enhancing reliability.}
+        
+        \resumeItem{\textbf{Technologies: TypeScript, React Native, Zod, AWS EC2, Postman, Git/GitHub \& Jira}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {KT Industries}{May'22 -- July'22}
+      {Software Developer Intern}{}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{responsive shopping cart} for an E-commerce website, resulting in user-friendly shopping experience.}
+        \resumeItem{Developed \textbf{Express APIs} for retrieving product details and placing orders, leading to increased company sales.}
+        \resumeItem{Implemented \textbf{JWT authentication} to ensure secure user access , strengthening data protection.}
+        % \resumeItem{Implemented user-friendly features allowing \textbf{adjustment of product quantity}, \textbf{addition}, or \textbf{removal} of items.}
+        \resumeItem{Implemented features such as \textbf{Save for Later}, \textbf{Social media sharing}, and \textbf{Get order summary}.}
+        \resumeItem{\textbf{Technologies: React, Node, Express, MongoDB, HTML, JavaScript, Postman, MUI \& Git/GitHub}}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+   % \resumeSubSubheading
+   %  {Software Engineer I}{Oct 2014 - Sep 2016}
+   %  \resumeItemListStart
+   %     \resumeItem{Apache Beam}
+   %       {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+   %  \resumeItemListEnd
+   % \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    % \resumeSubheading
+    %   {Information Technology Support Specialist}{Sep. 2018 -- Present}
+    %   {Southwestern University}{Georgetown, TX}
+    %   \resumeItemListStart
+    %     \resumeItem{Communicate with managers to set up campus computers used on campus}
+    %     \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
+    %     \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+    % \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
+    %   {Southwestern University}{Georgetown, TX}
+    %   \resumeItemListStart
+    %     \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+    %     \resumeItem{Developed a game in Java to test the generated dungeons}
+    %     \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
+    %     \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
+    %     \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+    %     \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+    %   \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+% package url
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+    % Project -1 
+               \resumeProjectHeading
+           {\textbf{Course-X} : \textit{E2E Fullstack Course Marketplace build on MERN} $|$ \href{https://course-x.vercel.app/}{\color{blue}\textbf{\textit{Website link}}}
+ $|$ \href{https://github.com/abhinav-0107/Course-Selling-Website}{\color{blue}\textbf{\textit{Repo link}}}}{}
+           \resumeItemListStart
+             % \resumeItem{Developed a \textbf{full stack} course selling app with specialized frontends for \textbf{Administrators} and \textbf{Users}.}
+
+            \resumeItem{Implemented a \textbf{monolithic repository architecture} for user, admin, \& server-side apps, encouraging \textbf{DRY}.}
+
+            \resumeItem{Used NextJS for \textbf{Server-Side Rendering}, eliminating \textbf{waterfalling effect} and improving \textbf{SEO} performance}
+
+            \resumeItem{Ensured API endpoint security by \textbf{JWT} \& custom \textbf{middlewares}, restricting access to authenticated clients only}
+
+            \resumeItem{Utilized the \textbf{Recoil} library to enhance state management in the \textbf{NextJS} application}
+
+            % \resumeItem{Utilized \textbf{MongoDB} to store admin and user credentials, along with the creation and purchase records of courses.}
+
+            \resumeItem{Executed the deployment of both frontend and backend application onto 
+            \textbf{AWS EC2 instances}.}
+            
+            \resumeItem{\textbf{Technologies: TypeScript, Next, Express, Node, MongoDB, AWS EC2, Zod, TurboRepo \& CI/CD}}
+           \resumeItemListEnd
+
+    % Project -2
+          \resumeProjectHeading
+          {\textbf{X-Flix} : \textit{Fullstack Online video platform(OVP)} $|$ \href{https://xflix-vod.netlify.app}{\color{blue}\textbf{\textit{Website link}}} $|$ \href{https://github.com/abhinav-0107/X-Flix}{\color{blue}\textbf{\textit{Repo link}}}}
+          {}
+          \resumeItemListStart
+            \resumeItem{Implemented video filtering based on \textbf{age} \& \textbf{genre}, sorting by \textbf{release date} \& \textbf{views} for better user experience.}
+            
+            % \resumeItem{Integrated \textbf{Like} and \textbf{Dislike} buttons to capture user feedback and preferences effectively.}
+            
+            \resumeItem{Developed APIs by using \textbf{Express} to fetch video details and update like counts in \textbf{MongoDB} database.}
+
+            \resumeItem{Engineered React component with Express API to enable \textbf{video uploads} with thumbnail, title, and genre.}
+
+            \resumeItem{\textbf{Technology stack: React JS, JavaScript, Express, MongoDB, Material UI \& React Router}}
+          \resumeItemListEnd
+          
+
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------Achievements-----------
+\section{Achievements}
+    \resumeSubHeadingListStart
+           \resumeItemListStart
+            \resumeItem{Achieved highest rating of \textbf{1535 (Specialist)} on \href{https://codeforces.com/profile/PRESAAN_}{\color{blue}\textbf{Codeforces}} and \textbf{1846} on \href{https://leetcode.com/abhinav_singh_01/}{\color{blue}\textbf{Leetcode}}}
+             \resumeItem{Attained Global Rank \textbf{967} out of \textbf{10,000+} participants in \textbf{Codeforces Round 802 (Div.2)}.}
+            \resumeItem{Attained Global Rank \textbf{1136} out of \textbf{24,000+} participants in \textbf{Leetcode Biweekly contest 84}.}
+            \resumeItem{Attained Global Rank \textbf{1622} out of \textbf{23,000+} participants in \textbf{Leetcode Biweekly contest 82}.}
+           \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+    \resumeSubHeadingListStart
+           \resumeItemListStart
+     \resumeItem{\textbf{Languages}{: JavaScript, TypeScript, Golang, C++, SQL, HTML}}
+     \resumeItem{\textbf{CS concepts}{: Data structures \& Algorithms, Database management system, OOPS, Operating system }}
+     \resumeItem{\textbf{Tools \& Technologies}{: React, Express, Node, MongoDB, Next, Docker, Recoil, React Native, Material UI, ZOD, Turborepo, TailwindCSS, Git, Github, AWS EC2 \& lambda, Linux, Jest, MySQL}}
+                \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
